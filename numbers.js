@@ -18,3 +18,10 @@
 // }
 
 // console.dir(solution(10));
+
+
+// Return Negative
+
+function makeNegative(num) {
+    return (num > 0) ? num * -1 : num
+}
