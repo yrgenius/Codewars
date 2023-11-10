@@ -118,11 +118,21 @@
 
 // Flick Switch
 
-function flickSwitch(arr) {
-    let flag = true
-    let outArray = []
-    for (value of arr) {
-        if (value === 'flick') flag = !flag
-        outArray.push(flag)
-    }
+// function flickSwitch(arr) {
+//     let flag = true
+//     let outArray = []
+//     for (value of arr) {
+//         if (value === 'flick') flag = !flag
+//         outArray.push(flag)
+//     }
+// }
+
+
+// Difference of Volumes of Cuboids
+
+function findDifference(a, b) {
+    let mult1 = a.reduce((acc, num) => acc * num)
+    let mult2 = b.reduce((acc, num) => acc * num)
+    return Math.abs(mult1 - mult2)
 }
+
