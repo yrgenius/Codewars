@@ -140,10 +140,6 @@ function findDifference(a, b) {
 
 {
     function hello(name) {
-        let tempName = ''
-        if (name) {
-            tempName = name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase()
-        }
-        return `Hello, ${name ? tempName : 'World'}!`
+        return `Hello, ${name ? name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase() : 'World'}!`
     }
 }
