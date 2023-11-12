@@ -136,3 +136,14 @@ function findDifference(a, b) {
     return Math.abs(mult1 - mult2)
 }
 
+// Hello, Name or World!
+
+{
+    function hello(name) {
+        let tempName = ''
+        if (name) {
+            tempName = name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase()
+        }
+        return `Hello, ${name ? tempName : 'World'}!`
+    }
+}
